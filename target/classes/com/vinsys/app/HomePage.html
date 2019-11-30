@@ -1,3 +1,18 @@
 <wicket:extend>
 	<h1>This is the Home</h1>
+	<input type="text" wicket:message="value:helloworld">
+	<wicket:message key="helloworld">Hello</wicket:message>
+	<div wicket:id="contentArea">this is the content area fragments
+		get added here</div>
+	<wicket:fragment wicket:id="formFrag">
+		<span wicket:id="sp1"></span>
+	</wicket:fragment>
+	<wicket:fragment wicket:id="messageFrag">
+		<span wicket:id="sp2"></span>
+	</wicket:fragment>
+	<form wicket:id="form1">
+		<button wicket:id="clicker">CLick</button>
+	</form>
+	<img wicket:id="search_icon"/>
+	
 </wicket:extend>
