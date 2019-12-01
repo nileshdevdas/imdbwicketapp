@@ -1,0 +1,15 @@
+
+
+
+<wicket:panel>
+	<script>
+	setInterval(() => {
+		 var date = new Date(); /* creating object of Date class */
+		 var hour = date.getHours();
+  		 var min = date.getMinutes();
+  		 var sec = date.getSeconds();
+		 document.getElementById("clock").innerHTML= "<b>"  + hour + "-" + min + "-" + sec + "</b>" 
+	}, 1000);
+</script>
+	<div id="clock"></div>
+</wicket:panel>
